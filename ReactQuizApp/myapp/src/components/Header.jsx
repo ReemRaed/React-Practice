@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import img from '../assets/quiz-logo.png'
 const Header =()=>{
     return(

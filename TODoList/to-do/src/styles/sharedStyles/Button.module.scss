@@ -1,0 +1,13 @@
+@import '../../scss/abstract/variable';
+@import '../../scss/abstract/function';
+@import '../../scss/abstract/mixin';
+
+.button
+{
+    @include button-basic(sm);
+    @each $type in $button-types {
+        &--#{$type} {
+          @include button-color($type);
+        }
+      }
+}

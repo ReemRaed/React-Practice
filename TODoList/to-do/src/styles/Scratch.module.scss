@@ -1,0 +1,17 @@
+@import '../scss/abstract/variable';
+@import '../scss/abstract/function';
+@import '../scss/abstract/mixin';
+
+.Scratch
+{
+    @include scratch_main();
+
+    &__img
+    {
+      @include scratch_img();
+    }
+    &__title
+    {
+      @include scratch_title();
+    }
+}

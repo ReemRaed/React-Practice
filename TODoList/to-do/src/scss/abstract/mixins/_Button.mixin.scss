@@ -1,0 +1,16 @@
+@mixin button-color($type:button)
+{
+    $color:button_type_color($type);
+    background-color: $color;
+}
+
+@mixin button-basic($size:sm)
+{
+    width:100%;
+    color: $font-color;
+    font-family: $font-family;
+    font-size: button_font-size($size);
+    height: button_height($size);
+    border: 1px solid white;
+    border-radius: $button-border-radius;
+}

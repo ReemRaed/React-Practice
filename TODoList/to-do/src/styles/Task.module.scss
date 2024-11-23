@@ -1,0 +1,53 @@
+@import '../scss/abstract/variable';
+@import '../scss/abstract/function';
+@import '../scss/abstract/mixin';
+
+.task {
+    height: 100%;
+    background: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        box-shadow: 0 0 10px #fbd392;
+
+    }
+
+    &__img {
+
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    &__content {
+        flex: 1;
+        padding: 0 1rem 0.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.25rem;
+    }
+    
+    &__button {
+        text-align: center;
+        width: fit-content;
+        border-radius: 5px;
+        padding: 0.5rem 1rem;
+        color: #201e1a;
+        font-size: 1rem;
+        border: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+
+}

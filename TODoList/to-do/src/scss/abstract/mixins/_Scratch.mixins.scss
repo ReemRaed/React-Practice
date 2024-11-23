@@ -1,0 +1,26 @@
+@mixin scratch_main()
+{
+    background-color: $back-ground-color;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin scratch_img()
+{
+    width: 200px;
+    height: 200px;
+}
+
+@mixin scratch_title()
+{
+    color: $font-color;
+    text-transform: capitalize;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+

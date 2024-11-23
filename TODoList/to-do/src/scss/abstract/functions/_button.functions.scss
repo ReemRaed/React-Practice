@@ -1,0 +1,16 @@
+@function button_type_color($type:button)
+{
+    @return map-get($map:$button-type-colors , $key:$type );
+}
+
+
+@function button_height($size:sm)
+{
+    @return  map-get($map: $button-heights, $key:$size );
+}
+
+
+@function button_font-size($size:sm)
+{
+    @return  map-get($map: $button-font-sizes, $key:$size )
+}

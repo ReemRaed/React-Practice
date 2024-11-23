@@ -1,0 +1,19 @@
+@import '../scss/abstract/variable';
+@import '../scss/abstract/function';
+@import '../scss/abstract/mixin';
+
+.Home {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: $light-color;
+    height: 100%;
+
+    &__navBar {
+        grid-column: 1/2;
+    }
+
+    &__container {
+        grid-column: 2/-1;
+    }
+
+}

@@ -1,0 +1,9 @@
+@import '../scss/abstract/variable';
+@import '../scss/abstract/function';
+@import '../scss/abstract/mixin';
+.showTasks
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 12rem));
+    gap: 1rem;
+}

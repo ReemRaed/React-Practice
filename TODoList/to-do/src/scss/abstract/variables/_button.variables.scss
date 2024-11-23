@@ -1,0 +1,48 @@
+$button-types: (
+    button,
+    submit,
+    reject,
+    reset,
+    cancel   
+);
+
+$button-type-button-color: #0000ff !default; // Blue
+$button-type-submit-color: #055e05 !default; // Green
+$button-type-reject-color: #ffff00 !default; // Yellow
+$button-type-reset-color: #ff0000 !default; // Red
+$button-type-cancel-color: #000000 !default; // Black
+
+$button-type-colors: (
+    button:$button-type-button-color,
+    submit:$button-type-submit-color,
+    reject:$button-type-reject-color,
+    reset: $button-type-reset-color,
+    cancel:$button-type-cancel-color,
+);
+
+$button_height_sm:3rem !default;
+$button_height_md:$button_height_sm *1.5 !default;
+$button_height_lg:$button_height_sm*2 !default;
+
+
+$button-heights:(
+    sm:$button_height_sm,
+    md:$button_height_md,
+    lg:$button_height_lg,
+);
+
+
+$button-font-size-sm: 1rem !default;
+$button-font-size-md: $button-font-size-sm*1.5 !default;
+$button-font-size-lg: $button-font-size-sm*2 !default;
+
+
+$button-font-sizes:(
+    sm:$button_font-size_sm,
+    md:$button_font-size_md,
+    lg:$button_font-size_lg,
+);
+
+$button-border-radius:5px !default;
+
+

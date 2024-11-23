@@ -1,0 +1,107 @@
+@import '../scss/abstract/variable';
+@import '../scss/abstract/function';
+@import '../scss/abstract/mixin';
+
+.Login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+   
+    &__title {
+        color: $base-color;
+        font-weight: 700;
+        font-family:$font-family;
+        font-size: $font-title-size;
+        letter-spacing: 0.1rem;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    &__container {
+        display: grid;
+        width: 70vw;
+        height: 70vh;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        box-shadow: 4px 4px 10px gray;
+        padding: 1rem;
+    }
+
+    &__containerLogin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    &__containerLoginTitle
+    {
+        align-self: center;
+        font-size: $font-title-size;
+        font-weight: 500;
+        text-shadow: 2px 2px 5px rgba(151, 145, 145, 0.5);
+        font-style: italic;
+        @include text();
+    }
+    
+    &__containerSplash {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $base-color;
+    }
+
+    &__img {
+        width: 100px;
+        height: 100px;
+    }
+    &__containerTitle
+    {
+        color: $font-color;
+        font-size: $font-title-size;
+        font-weight: bold;
+        font-family:$font-family;
+    }
+    &__containerLoginLabel
+    {
+        @include label();
+        align-self:flex-start;
+    }
+    &__containerLoginInput
+    {
+        border-radius: 20px;
+        border: 1px solid white;
+        padding: 1rem;
+        width: 50%;
+        background-color: $light-color;
+        &::placeholder
+        {
+            font-size: 0.75rem;
+            color: $secondary-color;
+        }
+        &:focus {
+            border-color: $base-color; // Change the border color on focus for better visibility.
+            outline: none; // Removes the default outline.
+        }
+    }
+    &__containerLoginButton
+    {
+        width: 50%;
+        background-color: $base-color;
+        border: none;
+        border-radius: 20px;
+        color: $font-color;
+        height: 50px;
+        margin-top: 0.5rem;
+    }
+    &__footerTitle
+    {
+        align-self: flex-start;
+        @include text();
+        text-transform: capitalize;
+    }
+
+}
